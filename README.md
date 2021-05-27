@@ -16,6 +16,8 @@ My own API for animation and bundle purposes. Light and modern frontend template
 
 # Where to start.
 
+Download the `.zip` and extract it to your project folder.
+
 Run these scripts at the root directory.
 
     - npm install
