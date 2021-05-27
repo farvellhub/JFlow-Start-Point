@@ -1,9 +1,23 @@
 // Import modules
 import Handler from "./api/eventHandler";
-import Parallax from "./api/parallaxText";
-import Lightbox from "./api/lightbox";
 
 // Webpack styles
 import "./styles/index.scss";
 
-// TEST 
+// Init Web
+const initPage = () => {
+    return new Promise(( resolve ) => {
+        const loader = new Handler({
+            element: "loader",
+            css: "disappear"
+        });
+
+        resolve( loader.onTimeout( 1600 ) );
+    });
+};
+
+// Main function
+window.addEventListener("load", () => {
+    initPage()
+        .then(() => console.log( "Say hello!" ));
+});

@@ -1,6 +1,6 @@
 import LightboxHandler from "./lightboxHandler";
 
-
+// Lightbox gallery
 export default class Lightbox {
 
     constructor( data ) {
@@ -41,8 +41,6 @@ export default class Lightbox {
             next: "next-button",
             length: 2
         };
-
-        console.log(this.handler)
     }
 
     _initRoullette() {

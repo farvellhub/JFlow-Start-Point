@@ -1,4 +1,4 @@
-/* Generic event handler */
+// Lightbox event handler 
 
 export default class LightboxHandler {
 
