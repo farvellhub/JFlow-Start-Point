@@ -1,11 +1,13 @@
-/* API Css animations */
+// Generic handler
 
 export default class Handler {
 
+    // Animation { element: idName, css: className || [className] }
     constructor( ...animations ) {
         this.animations = [];
         this._initAnimations( animations );
 
+        // Return event methods
         return Object.freeze(Object.create({
 
             onTimeout: this.onTimeout.bind( this ),
@@ -15,6 +17,7 @@ export default class Handler {
         }));
     }
 
+    // Setting animations object and css array
     _initAnimations( animations ) {
         animations.forEach(( a, i ) => {
             this.animations.push({
@@ -26,6 +29,7 @@ export default class Handler {
         });
     }
 
+    // If css provided is not an array
     _setDefaultAnimation( index ) {
         const animation = this.animations[ index ],
             element = animation.element,
@@ -35,8 +39,10 @@ export default class Handler {
             this._toggleAnimation( element, css[0] );
     }
 
+    // Toggle class list item
     _toggleAnimation( element, css ) { element.classList.toggle( css ); }
 
+    // For each animation, animate
     _animate() {
         this.animations.forEach(( animation ) => {
             animation.css.forEach(( cssName ) => {
@@ -45,6 +51,7 @@ export default class Handler {
         });
     }
 
+    // Timeout event, animate given time
     onTimeout( time ) {
         setTimeout(() => {
             this._animate(); 
@@ -53,6 +60,7 @@ export default class Handler {
         return this;
     }
 
+    // Click event triggers animation
     onClick( controls ) {
         const keys = document.querySelectorAll( `.${controls}` );
 
@@ -65,6 +73,7 @@ export default class Handler {
         return this;
     }
 
+    // Given a offset 
     _initScroll( offset ) {
         if ( window.scrollY >= offset ) {
             this._animate();
@@ -74,6 +83,7 @@ export default class Handler {
         return false;
     }
 
+    // Scroll event triggers animation
     onScroll( offset ) {
         let scrolled = this._initScroll( offset );
 

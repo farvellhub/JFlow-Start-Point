@@ -2,11 +2,14 @@
 
 export default class LightboxHandler {
 
+    // Animation { element: idName, css: className || [className] }
     constructor( ...animations ) {
 
+        // Init array of animations.
         this.animations = [];
         this._initAnimations( animations );
 
+        // Return function to Lightbox logic
         return Object.freeze(Object.create({
 
             setAfterFunc: this.setAfterFunc.bind( this ),
@@ -16,6 +19,7 @@ export default class LightboxHandler {
         }));
     }
 
+    // Setting animations object and css array
     _initAnimations( animations ) {
         animations.forEach(( a, i ) => {
             this.animations.push({
@@ -23,11 +27,12 @@ export default class LightboxHandler {
                 css: Array.isArray( a.css ) ? a.css : [ a.css ]
             } );
 
-            this._initCss( i );
+            this._setDefaultAnimation( i );
         });
     }
 
-    _initCss( index ) {
+    // If css provided is not an array
+    _setDefaultAnimation( index ) {
         const animation = this.animations[ index ],
             element = animation.element,
             css = animation.css;
@@ -36,6 +41,7 @@ export default class LightboxHandler {
             this._animateByCss( element, css[0] );
     }
 
+    // Needs for logic in Lightbox, controls roullette updates
     setAfterFunc( func, that, ...args ) {
         this._afterFunc = () => {
             if ( typeof func == "function"
@@ -46,6 +52,7 @@ export default class LightboxHandler {
         return this;
     }
 
+    // Only update animation if its condition return true
     _isConditioned( conditions ) {
         if ( conditions === null ) return false;
             
@@ -60,22 +67,26 @@ export default class LightboxHandler {
         return isConditioned;
     }
 
-    _animateByCss( element, css ) { element.classList.toggle( css ); }
+    // Toggle class list item
+    _toggleAnimation( element, css ) { element.classList.toggle( css ); }
 
+    // For each animation, animate
     _animate() {
         this.animations.forEach(( a ) => {
             a.css.forEach(( c ) => {
-                this._animateByCss( a.element, c );
+                this._toggleAnimation( a.element, c );
             });        
         });
     }
 
+    // Controls if have conditions
     _trigger( conditions ) {
         if ( this._isConditioned( conditions ) ) return;
 
         this._animate();
     }
 
+    // Execute all functions atached to the event
     _execution( conditions = null ) {
         this._trigger( conditions );
         
@@ -83,19 +94,20 @@ export default class LightboxHandler {
             this._afterFunc();
     }
 
+    // Needs in Lightbox class, return last clicked element
     lastClicked() { return this.lastClick; }
 
+    // Each click updates lastClick variable 
     onClick( controls, conditions ) {
         const keys = document.querySelectorAll( controls );
 
         keys.forEach(( e, i ) => {
             e.addEventListener("click", () => {
                 this.lastClick = { 
-                    "element" : e,
-                    "index" : (i - 1) 
+                    "element": e,
+                    "index": (i - 1) 
                 };
 
-                console.log("click to %o at index %o!", e, i-1);
                 this._execution( conditions );
             });
         });
