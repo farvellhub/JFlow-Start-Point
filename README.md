@@ -18,9 +18,9 @@ My own API for animation and bundle purposes. Light and modern frontend template
 
 Run these scripts at the root directory.
 
-    - `npm install`
-    - `npm run-script start`
-    - `npm run-script watch`
+    - npm install
+    - npm run-script start
+    - npm run-script watch
 
 The last command above starts a webpack live server.
 
