@@ -11,7 +11,7 @@ My own API for animation and bundle purposes. Light and modern frontend template
 
 · `post-css` as SASS transpiler.
 
-· `babel7 ` as ES7 transpiler.
+· `babel7` as ES7 transpiler.
 
 
 # Where to start.
