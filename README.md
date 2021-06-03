@@ -7,7 +7,7 @@ My own library for animation, state control and bundle purposes. Light and moder
 
 · `Webpack4` as bundler.
 
-· `image post-procesing`
+· `image post-procesing`.
 
 · `post-css` as SASS transpiler.
 

@@ -187,7 +187,6 @@ module.exports = class Lightbox {
 const Style = __webpack_require__( /*! ../style */ "./node_modules/@farvell/jflow-core/src/style.js" );
 
 // Lightbox DOM constructor
-
 module.exports = class LightboxConstructor {
 	constructor( config ) {
 		this._createLightbox();
@@ -209,7 +208,7 @@ module.exports = class LightboxConstructor {
 				img: document.getElementById( "lightbox-roullette" ),
 				txt: []
 			},
-			control: ".lightbox-control",
+			control: "lightbox-control",
         	exit: "lightbox-close",
         	conditions: {
            		roullette: "roullette-image",
@@ -222,7 +221,7 @@ module.exports = class LightboxConstructor {
 
 	// Putting lightbox html to DOM
 	_createLightbox() {
-		const body = document.getElementsByTagName( body );
+		const body = document.getElementsByTagName( "body" );
 
 		body.innerHTML += `
 			<section id="lightbox" class="fixed-wrapper lightbox-wrapper">
@@ -266,7 +265,6 @@ module.exports = class LightboxConstructor {
 /***/ ((module) => {
 
 // Lightbox event handler 
-
 module.exports = class LightboxHandler {
 
     // ... Animation { element: idName, css: className || [className] }
@@ -368,7 +366,7 @@ module.exports = class LightboxHandler {
 
     // Each click updates lastClick variable 
     async onClick( controls, conditions ) {
-        const keys = document.querySelectorAll( controls );
+        const keys = document.querySelectorAll( `.${controls}` );
 
         keys.forEach(( e, i ) => {
             e.addEventListener("click", () => {
@@ -394,7 +392,6 @@ module.exports = class LightboxHandler {
 /***/ ((module) => {
 
 // Generic handler
-
 module.exports = class Handler {
 
     // Animation { element: idName, css: className || [className] }
@@ -515,7 +512,6 @@ module.exports = class Handler {
 /***/ ((module) => {
 
 /* Parallax movement */
-
 module.exports = class Parallax {
 
     // ... HTMLElement, dir 1 = up | -1 = down, minOffset in pixels to active scroll
@@ -585,7 +581,6 @@ module.exports = class Parallax {
 /***/ ((module) => {
 
 // Converts style objetcs into html props.
-
 module.exports = class Style {
 	constructor( styles ) {
 		// Object containig style keys
@@ -682,8 +677,7 @@ var _require = __webpack_require__(/*! @farvell/jflow-core */ "./node_modules/@f
     Handler = _require.Handler; // Webpack styles
 
 
-
-console.log(Handler); // Init Web
+ // Init Web
 
 var initPage = function initPage() {
   return new Promise(function (resolve) {
