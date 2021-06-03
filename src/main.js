@@ -1,5 +1,5 @@
 // Import modules
-const { Handler } = require( "@farvell/jflow-core" );
+import { Handler } from "@farvell/jflow-core";
 // Webpack styles
 import "./styles/index.scss";
 
