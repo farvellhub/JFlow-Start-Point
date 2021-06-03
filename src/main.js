@@ -6,14 +6,12 @@ import "./styles/index.scss";
 
 // Init Web
 const initPage = () => {
-    return new Promise(( resolve ) => {
-        const loader = new Handler({
-            element: "loader",
-            css: "disappear"
-        });
-
-        resolve( loader.onTimeout( 1600 ) );
+    const loader = new Handler({
+        element: "loader",
+        css: "disappear"
     });
+
+    return loader.onTimeout( 1600 ) ;
 };
 
 // Main function
