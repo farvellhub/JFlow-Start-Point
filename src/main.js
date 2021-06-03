@@ -1,8 +1,8 @@
 // Import modules
-import Handler from "./api/eventHandler";
-
+const { Handler } = require( "@farvell/jflow-core" );
 // Webpack styles
 import "./styles/index.scss";
+
 
 // Init Web
 const initPage = () => {

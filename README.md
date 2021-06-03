@@ -21,8 +21,7 @@ Download the `.zip` and extract it to your project folder.
 Run these scripts at the root directory.
 
     - npm install
-    - npm run-script start
-    - npm run-script watch
+    - npm run dev
 
 The last command above starts a webpack live server.
 
