@@ -1,6 +1,6 @@
 # JFlow Start Point
 
-My own library for animation and bundle purposes. Light and modern frontend tooltip with all you need for start!
+My own library for animation, state control and bundle purposes. Light and modern frontend tooltip with all you need for start!
 
 
 # Characteristics.
