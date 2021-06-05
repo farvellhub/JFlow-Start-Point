@@ -39,4 +39,7 @@ Run `npm run-script build` to run development build. You can also run `npm run b
 · `/src/main.js`: Entry point.
 
 
-Feel free to use it. :)
+Questions?
+----------
+
+If you have any questions, please feel free to contact me on discord Farvell⚡#3387.
