@@ -1,4 +1,5 @@
 .vscode/
+public/build
 node_modules/
 *.log
 *.code-workspace
