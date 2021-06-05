@@ -1,5 +1,6 @@
+/* eslint-disable no-undef */
 const path = require( "path" ),
-    cssExtract = require("mini-css-extract-plugin");
+    cssExtract = require( "mini-css-extract-plugin" );
 
 module.exports = {
     mode: "development",
@@ -49,7 +50,7 @@ module.exports = {
             {
                 test: /\.(png|jpe?g|gif)$/i,
                 use: {
-                    loader: 'file-loader',
+                    loader: "file-loader",
                 },
             }
         ]
