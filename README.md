@@ -5,7 +5,7 @@ My own library for animation, state control and bundle purposes. Light and moder
 
 # Characteristics.
 
-· `Webpack4` as bundler.
+· `Webpack5` as bundler.
 
 · `image post-procesing`.
 
@@ -21,7 +21,7 @@ Download the `.zip` and extract it to your project folder.
 Run these scripts at the root directory.
 
     - npm install
-    - npm run dev
+    - npm run dev // We have problems with webpack serve
 
 The last command above starts a webpack live server.
 
