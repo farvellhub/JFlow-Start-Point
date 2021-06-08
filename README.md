@@ -14,29 +14,29 @@
 
 ## Where to start.
 
-Run `npm run dev` to run development build.
-
-Run `npm run-script build` to run development build or `npm run build-prod` for production environment.
+- npm run dev - to run development build.
+- npm run-script build to run development build 
+- npm run build-prod for production environment.
 
 ## Directories
 
-· `/public/build`: Webpack bundle.
+· /public/build: Webpack bundle.
 
-· `/src/api`: Js modules.
+· /src/modules: Js modules.
 
-· `/src/styles`: Scss classes.
+· /src/styles: Scss classes.
 
-· `/src/main.js`: Entry point.
+· /src/main.js: Entry point.
 
 ## Characteristics.
 
-· `Webpack5` as bundler.
+· Webpack5 as bundler.
 
-· `image post-procesing`.
+· image post-procesing.
 
-· `post-css` as SASS transpiler.
+· post-css as SASS transpiler.
 
-· `babel7` as ES7 transpiler.
+· babel7 as ES7 transpiler.
 
 
 ## Show your support
