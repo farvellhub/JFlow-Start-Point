@@ -1,8 +1,8 @@
 <h1 align="center">Welcome to JFlow Start Point👋</h1>
 <p align="center">
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.3-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-green.svg" />
   </a>
 </p>
 
@@ -38,11 +38,6 @@ Run `npm run-script build` to run development build or `npm run build-prod` for 
 
 · `babel7` as ES7 transpiler.
 
-## Author
-
-👤 **Farvell**
-
-* Github: [@farvellmaster](https://github.com/farvellmaster)
 
 ## Show your support
 
