@@ -12,11 +12,13 @@
 
 - npm install
 
+
 ## Where to start.
 
 - npm run dev - to run development build.
 - npm run-script build to run development build 
 - npm run build-prod for production environment.
+
 
 ## Directories
 
@@ -27,6 +29,7 @@
 · /src/styles: Scss classes.
 
 · /src/main.js: Entry point.
+
 
 ## Characteristics.
 
