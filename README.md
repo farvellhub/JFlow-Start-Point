@@ -8,17 +8,13 @@
 
 > My own library for animation, state control and bundle purposes. Light and modern frontend tooltip with all you need for start!
 
-### 🏠 [Homepage](https://github.com/farvellmaster/chat-nest)
+## Installation
 
+- npm install
 
 ## Where to start.
 
-Run these scripts at the root directory.
-
-    - npm install
-    - npm run dev
-
-The last command above starts a webpack live server.
+Run `npm run dev` to run development build.
 
 Run `npm run-script build` to run development build. You can also run `npm run build-prod` for production environment.
 
