@@ -16,7 +16,7 @@
 
 Run `npm run dev` to run development build.
 
-Run `npm run-script build` to run development build. You can also run `npm run build-prod` for production environment.
+Run `npm run-script build` to run development build or `npm run build-prod` for production environment.
 
 ## Directories
 
