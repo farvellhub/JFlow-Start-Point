@@ -23,8 +23,6 @@
 
 · /public/build: Webpack bundle.
 
-· /src/modules: Js modules.
-
 · /src/styles: Scss classes.
 
 · /src/main.js: Entry point.
