@@ -21,22 +21,22 @@
 
 ## Directories
 
-· /public/build: Webpack bundle.
+- /public/build: Webpack bundle.
 
-· /src/styles: Scss classes.
+- /src/styles: Scss classes.
 
-· /src/main.js: Entry point.
+- /src/main.js: Entry point.
 
 
 ## Characteristics.
 
-· Webpack5 as bundler.
+- Webpack5 as bundler.
 
-· image post-procesing.
+- image post-procesing.
 
-· post-css as SASS transpiler.
+- post-css as SASS transpiler.
 
-· babel7 as ES7 transpiler.
+- babel7 as ES7 transpiler.
 
 
 ## Show your support
