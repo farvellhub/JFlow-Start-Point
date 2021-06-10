@@ -1,7 +1,7 @@
 {
   "name": "jflow-start",
   "version": "1.0.3",
-  "description": "Library for common functions.",
+  "description": "Bundle tmeplate for frontend development.",
   "main": "main.js",
   "scripts": {
     "build": "webpack",
