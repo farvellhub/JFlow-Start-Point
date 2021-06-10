@@ -5,7 +5,7 @@
 <a href="https://discord.gg/tpNtcJHw" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
 </p>
 
-> My own library for animation, state control and bundle purposes. Light and modern frontend tooltip with all you need for start!
+> My own bundle and project config. Light and modern frontend tooltip with all you need to start!
 
 ## Installation
 
@@ -15,7 +15,7 @@
 ## Where to start.
 
 - npm run dev: to run development build.
-- npm run-script: build to run development build 
+- npm run build: build to run development build 
 - npm run build-prod: for production environment.
 
 
