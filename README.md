@@ -14,9 +14,10 @@
 
 ## Where to start.
 
-- npm run dev: to run development build.
-- npm run build: build to run development build 
-- npm run build-prod: for production environment.
+- npm run serve - Run development server.
+- npm run dev - Watch mode.
+- npm run build - Development build 
+- npm run build-prod - Production build deploy.
 
 
 ## Directories
